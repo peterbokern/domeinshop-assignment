@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 /*////////////////////////////////////////////////////////////////////////
 Table of Contents:
     1. Global Styles
@@ -9,41 +11,239 @@ Table of Contents:
         3.4 Faq
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
-
+/*Grijs #899CA0 en donkergroen #1C2B32)*/
 
 
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
 
+/*CSS Reset*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+
+main {
+    width: auto;
+}
+
+
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+}
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
 
+h1 {
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+}
 
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+p {
+    font-size: 14px;
+    text-align: left;
+    margin: 5px;
+}
+
+a {
+    color: #899CA0;
+    text-decoration-color: #899CA0;
+}
+
+a:hover {
+    text-decoration: none;
+}
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
 
 
-
 /*///////////// 3.1 Header /////////////*/
 
+header {
+    background-image: url("../../assets/images/mountains.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+.header-content {
+    max-width: 1000px;
+    margin: auto;
+    height: 500px;
+}
+
+.header-content p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.search-domain-form {
+    max-width: fit-content;
+    margin: 30px auto;
+}
+
+.search-domain-form input {
+    font-size: 14px;
+    background: transparent;
+    padding-right: 60px;
+    padding-left: 20px;
+    padding-block: 20px;
+    border: black solid 0.5px;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+
+.search-domain-form input:focus{
+    outline: none;
+}
+
+.search-domain-form button {
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    margin-left: -5px;
+    padding-block: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: black solid 0.5px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.search-domain-form input::placeholder {
+    color: black;
+    text-align: start;
+    margin-right: -5px;
+}
 
 
 /*///////////// 3.2 Testimonial /////////////*/
+.testimonial {
+    width: 100%;
+    margin: 0 auto;
+}
 
+.testimonial-article {
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 12px;
+    position: relative;
+}
+
+.testimonial-article + article {
+    margin-top: 40px;
+}
+
+blockquote {
+    padding-left: 60px;
+}
+
+.testimonial-article footer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.avatar {
+    height: 44px;
+    padding-right: 20px;
+}
+
+cite {
+    display: inline-block;
+}
+
+.quote-icon {
+    height: 44px;
+    border-radius: 50%;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
 
 
 /*///////////// 3.3 Support /////////////*/
+.support {
+    width: 100%;
+}
 
+.support img {
+    width: 100%
+}
+
+.support-btn {
+    border-radius: 24px;
+    border: none;
+    font-size: 14px;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    background: black;
+}
 
 
 /*///////////// 3.4 Faq /////////////*/
 
+.faq {
+    width: 100%;
+    margin: 0 auto;
+}
 
+.faq:hover {
+    cursor: pointer;
+}
+
+summary {
+    margin: -0.5em -0.5em 0;
+    padding: 1em;
+}
+
+details[open] {
+    padding: 0.5em;
+}
+
+details[open] summary {
+    margin-bottom: 0.5em;
+
+}
+
+.opened-faq {
+    color: white;
+    background-color: #899CA0;
+    padding: 30px;
+    border-radius: 10px;
+}
 
 /*///////////// 3.5 Footer /////////////*/
+
+.footer{
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #1C2B32;
+}
